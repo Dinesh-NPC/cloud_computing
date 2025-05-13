@@ -1,0 +1,24 @@
+1.go to google and search : cloud os image download
+select NetBSD and download the .qcow2 file
+
+2.click three lines and select images
+create image
+image name :NetBSD
+image description :Cloud Image
+browse->downloads-> .qcow2 file
+format:qcow2
+minimum disk size:4GB
+minimum RAM size:2 GB
+image sharing:public->next->create image
+
+3.click the three lines ->instances
+launch instance
+instance name:Myins
+volume size:4 GB
+NetBSD
+m1.small
+external->next->error->delete instance
+
+4.go to terminal
+
+microstack launch NetBSD-n Myins --flavor m1.small
