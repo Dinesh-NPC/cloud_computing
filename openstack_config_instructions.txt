@@ -1,0 +1,27 @@
+1.go to terminal:
+
+su
+password:
+apt-get update
+snap install microstack
+sudo microstack init --auto --control
+microstack.openstack --version
+sudo snap get microstack config.credentials.keystone-password
+
+2. got to firefox browser
+localhost/
+10.20.20.1/
+username:admin
+password:(which we got from terminal)
+
+3.click the three lines ->instances
+launch instance
+instance name:MyVm
+volume size:10 GB
+cirros
+m1.tiny
+external->error->delete instance
+
+4.go to terminal
+exit
+microstack launch cirros-n MyVm
