@@ -1,0 +1,17 @@
+downloads:
+1.cloud simulator using eclipse download->windows
+2.commaon math 3 jar file->binaries->zip file
+3.eclipse java oxygen download>->web developers
+4.jdk 8 download for windows ->jdk8u202.64*exe,jre8u441.64*exe
+
+copy the path 
+C:\Program Files\Java\jdk1.8.0_202\bin
+paste it in->edit environmental variable->path->edit 
+
+extract common math -copy commons-math4-core-4.0-beta1.jar and commons-math4-legacy-4.0-beta1.jar
+extract cloudsim and paste the both in jars file
+
+launch eclipse
+click file->new->javaproject->projectname:cloudsim
+uncheck the default location and select the extracted folder
+click finish
