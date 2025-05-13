@@ -1,0 +1,21 @@
+1.Serrvice -> S3_bucket -> create bucket
+bucket name:dineshk1234
+
+2.go to google and search: download sample website files->free css
+click a template->download
+
+3.upload->add folder->select the downloaded file->upload
+
+4.select bucket->permissions->block public access->edit->uncheck all ->save changes->confirm
+
+5.select bucket->permissions->bucket policy->edit->policy generator
+S3 bucket policy
+effect : allow
+principal :*
+actions : GetObject
+ARN: arn:aws:s3:::dineshk123/*
+->add statement->generate policy
+copy the policy and paste in bucket policy->save changes
+
+6.select index.html file
+copy the url and paste it in browser

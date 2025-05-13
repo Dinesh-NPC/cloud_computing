@@ -1,0 +1,25 @@
+1.login to aws account
+
+2.launch_instance:
+name : My_ins
+create new key pair key->dinesh
+launch instance
+
+3.Elastic block` store->volumes->create volume
+gp2
+10GB
+create volume
+
+4.Click the volume->actions->attach volume
+instance->running
+device name->/dev/sdf->attach volume
+
+5.Elastic block` store->volumes->select the created volume->action->create snapshot
+Description : My_SS->create snapshot
+
+6.Elastic block` store->Snapshot->select the create snapshot->actions-> create volume from snapshot
+size : 15GB->create volume
+
+7.Elastic block` store->volumes->select the volume created from snapshot->actions->attach volume
+instance->running
+device name->/dev/sdb->attach volume
